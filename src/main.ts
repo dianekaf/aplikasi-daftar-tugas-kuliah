@@ -238,6 +238,9 @@ function renderAplikasi(): void {
               </div>`
         }
       </section>
+      <footer class="footer">
+      <p>${amankanTeks(namaAplikasi)} &bull; Dibangun dengan Vite & TypeScript</p>
+    </footer>
     </main>
   `;
 
