@@ -114,7 +114,7 @@ function renderAplikasi(): void {
       <header class="header">
         <div>
           <h1>${amankanTeks(namaAplikasi)}</h1>
-          <p class="subtitle">Kelola jadwal dan tenggat tugas kuliah</p>
+          <p class="subtitle">Kelola jadwal dan tenggat tugas kuliah secara terstruktur</p>         
           <p class="info-waktu-live">Waktu Sekarang: <span id="waktu-sekarang">Memuat waktu...</span></p>
         </div>
         <span class="badge-versi">v${amankanTeks(versiAplikasi)}</span>
