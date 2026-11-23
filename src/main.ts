@@ -137,6 +137,7 @@ function renderAplikasi(): void {
 
       <section class="panel-form">
         <h2>${tugasDiedit ? 'Edit Tugas Kuliah' : 'Tambah Tugas Baru'}</h2>
+        <p class="subtitle" style="margin-bottom: 12px;">Menampilkan <strong>${totalTugas}</strong> tugas kuliah yang tercatat di penyimpanan lokal.</p>
         <form id="form-tugas" class="form-grid">
           <div class="grup-input">
             <label for="input-judul">Judul Tugas</label>
