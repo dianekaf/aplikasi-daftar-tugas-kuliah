@@ -9,7 +9,7 @@ import { ambilDataLokal, simpanDataLokal } from './types';
 
 const KUNCI_STORAGE = 'data_tugas_kuliah_v1';
 
-const namaAplikasi: string = import.meta.env.VITE_APP_TITLE || 'Aplikasi Daftar Tugas Kuliah';
+const namaAplikasi: string = import.meta.env.VITE_APP_TITLE || 'DAFTAR TUGAS KULIAH';
 const versiAplikasi: string = import.meta.env.VITE_APP_VERSION || '1.0.0';
 
 let daftarTugas: DaftarTugas = ambilDataLokal<DaftarTugas>(KUNCI_STORAGE, []);
@@ -144,7 +144,7 @@ function renderAplikasi(): void {
             <input
               type="text"
               id="input-judul"
-              placeholder="Contoh: Laporan Praktikum TypeScript"
+              placeholder="Contoh: Tugas Pertemuan 1"
               value="${tugasDiedit ? amankanTeks(tugasDiedit.judul) : ''}"
               required
             />
