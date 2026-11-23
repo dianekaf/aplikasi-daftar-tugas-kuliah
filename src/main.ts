@@ -9,7 +9,7 @@ import { ambilDataLokal, simpanDataLokal } from './types';
 
 const KUNCI_STORAGE = 'data_tugas_kuliah_v1';
 
-const namaAplikasi: string = import.meta.env.VITE_APP_TITLE || 'Aplikasi Daftar Tugas Kuliah';
+const namaAplikasi: string = import.meta.env.VITE_APP_TITLE || 'DAFTAR TUGAS KULIAH';
 const versiAplikasi: string = import.meta.env.VITE_APP_VERSION || '1.0.0';
 
 let daftarTugas: DaftarTugas = ambilDataLokal<DaftarTugas>(KUNCI_STORAGE, []);
@@ -137,13 +137,14 @@ function renderAplikasi(): void {
 
       <section class="panel-form">
         <h2>${tugasDiedit ? 'Edit Tugas Kuliah' : 'Tambah Tugas Baru'}</h2>
+        <p class="subtitle" style="margin-bottom: 12px;">Menampilkan <strong>${totalTugas}</strong> tugas kuliah yang tercatat di penyimpanan lokal.</p>
         <form id="form-tugas" class="form-grid">
           <div class="grup-input">
             <label for="input-judul">Judul Tugas</label>
             <input
               type="text"
               id="input-judul"
-              placeholder="Contoh: Laporan Praktikum TypeScript"
+              placeholder="Contoh: Tugas Pertemuan 1"
               value="${tugasDiedit ? amankanTeks(tugasDiedit.judul) : ''}"
               required
             />
